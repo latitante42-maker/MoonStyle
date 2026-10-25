@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MindShift</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- LOADING PAGE -->
+<div id="loadingPage">
+  <div class="logoWrap">
+    <img src="mindshift_logo.webp" alt="logo" class="logo">
+    <h2>MindShift</h2>
+  </div>
+  <div class="loaderBox">
+    <div class="percent" id="percent">10</div>
+    <div class="progressBar"><div class="progress" id="progress"></div></div>
+    <p class="tip" id="tip">Caricamento mentalità...</p>
+  </div>
+</div>
+
+<!-- APP PAGE -->
+<div id="appPage" style="display:none">
+  <div class="header">
+    <div class="smallLogo"><img src="mindshift_logo.webp"></div>
+    <h1>MindShift</h1>
+  </div>
+  
+  <!-- BARRA DI RICERCA GROSSA -->
+  <div class="searchWrap">
+    <div class="searchBar">
+      <span class="searchIcon">🔍</span>
+      <input type="text" id="searchInput" placeholder="chiedimi qualcosa...">
+      <button class="searchBtn" onclick="generate()">↗</button>
+    </div>
+    <div class="moods">
+      <button class="mood active" data-m="freddo">🧊 Freddo</button>
+      <button class="mood" data-m="calmo">😌 Calmo</button>
+      <button class="mood" data-m="cattivo">🔥 Cattivo</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="answer" id="answer" style="display:none"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
